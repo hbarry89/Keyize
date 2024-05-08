@@ -1,6 +1,6 @@
 {
   "name": "keyize",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "an NPM package that formats the keys of JSON payloads.",
   "main": "index.js",
   "scripts": {
