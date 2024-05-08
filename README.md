@@ -27,13 +27,58 @@ const keyize = require('keyize');
 ```
 
 ## Output
+```javascript
+keyzie("firstName"); // Output: First Name
+keyzie("first_name"); // Output: First Name
+keyzie("userId"); // Output: User ID
+keyzie("user_id"); // Output: User ID
+keyzie("id"); // Output: ID
 ```
-First Name: test
-First Name: test
-User ID: 0
-User ID: 0
-ID: 0
+
+## Sample Usage
+
+### Test data
 ```
+userId: 1
+id: 1
+title: sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+body: quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto
+```
+
+### Use keyize
+```javascript
+const keyize = require('keyize');
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(obj => {
+            Object.entries(obj).forEach(([key, value]) => {
+                console.log(`${keyize(key)}: ${value}`);
+            });
+        }); 
+    })
+    .catch(error => {
+        console.error(error);
+    });
+```
+
+### Result
+
+```
+User ID: 1
+ID: 1
+Title: sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+Body: quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto
+```
+
+See full sample usage [here](https://github.com/hbarry89/keyize-testing).
 
 ## License
 MIT
