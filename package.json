@@ -1,0 +1,25 @@
+{
+  "name": "keyize",
+  "version": "1.0.0",
+  "description": "an NPM package that formats the keys of JSON payloads.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbarry89/keyize.git"
+  },
+  "keywords": [
+    "key",
+    "payload",
+    "json",
+    "titlecase"
+  ],
+  "author": "Huda Barry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hbarry89/keyize/issues"
+  },
+  "homepage": "https://github.com/hbarry89/keyize#readme"
+}
