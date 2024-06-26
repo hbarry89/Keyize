@@ -84,4 +84,4 @@ See full sample usage [here](https://github.com/hbarry89/keyize-testing).
 MIT
 
 ## Author
-[Huda Barry](https://github.com/hbarry89)
+[@hbarry89](https://github.com/hbarry89)
